@@ -14,3 +14,13 @@ if __name__ == '__main__':
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+def decode(password):
+
+    decoded_password = ""
+
+    for i in range(len(password)):
+
+        decoded_password += str(int(password[i]) - 3)
+    
+    return decoded_password
